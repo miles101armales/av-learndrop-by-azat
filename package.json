@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-template-tg-bot",
+  "name": "av-learndrop-bot-1",
   "version": "1.0.0",
   "description": "NodeJS template of Telegram Bot with telegraf package and local sessions. Have a commands, scenes and custom context.",
   "main": "index.js",
