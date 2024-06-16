@@ -1,4 +1,5 @@
-import { Context, Scenes } from 'telegraf';
+import { Scenes, Context } from '/root/av-learndrop-by-azat/node_modules/telegraf/typings/index';
+
 
 export interface MyWizardSession extends Scenes.WizardSessionData {
   myWizardSessionProp: number;

@@ -1,13 +1,13 @@
-import { Scenes, Telegraf } from 'telegraf';
 import { MyContext } from './interfaces/context.interface';
 import { Command } from './classes/command.class';
 import { Scene } from './classes/scene.class';
 import { ConfigService } from './utils/config/config.service';
 import { LoggerService } from './utils/logger/logger.service';
-import LocalSession from 'telegraf-session-local';
 import { FirstScene } from './scenes/first.scene';
 import { SecondScene } from './scenes/second.scene';
 import { ThirdScene } from './scenes/third.scene';
+import { Scenes, Telegraf } from 'telegraf';
+import LocalSession from 'telegraf-session-local';
 
 export class Bot {
 	bot: Telegraf<MyContext>;
