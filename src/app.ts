@@ -20,7 +20,7 @@ export class Bot {
 		private readonly configService: ConfigService,
 		private readonly loggerService: LoggerService,
 	) {
-		this.bot = new Telegraf<MyContext>(this.configService.get('API_TOKEN'));
+		this.bot = new Telegraf<MyContext>(this.configService.get('API_TOKEN_TEST'));
 		this.bot.use(
 			new LocalSession({ database: 'sessions.json' })
 			.middleware()
@@ -66,6 +66,8 @@ export class Bot {
 					ctx.reply('Ошибка работы бота. Повторите попытку\n\n/start')
 				}
 			})
+
+			
 		} catch (error) {
 			this.loggerService.error(error);
 		}
